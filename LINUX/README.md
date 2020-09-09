@@ -38,3 +38,26 @@ root@Username-empty:~# exit
 noop is faster in SSD because SSD has IO scheduler in it (FTL).
 
 And it's more faster than OS's CFQ scheduler.
+
+## show storage devices 
+
+```bash
+$ sudo fdisk -l
+```
+
+## make partition on device
+
+```bash
+$ sudo fdisk /dev/sdb
+```
+press n
+press ENTER
+press ENTER
+press ENTER
+press w
+
+## show device's name
+```bash
+$ sudo 
+```
+
