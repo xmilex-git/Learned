@@ -58,6 +58,25 @@ press w
 
 ## show device's name
 ```bash
-$ sudo 
+# SATA devices
+$ sudo smartctl -a /dev/sdb
+# PCIe devices
+$ sudo nvme -list
 ```
 
+smartctl : sudo apt-get install smartmontools
+nvme-cli : sudo apt-get install nvme-cli
+
+## make file system on device
+```bash
+$ sudo mkfs.ext4 /dev/sdb1
+```
+
+
+## mount device
+```bash
+$ mkdir test_sdb1
+$ sudo mount /dev/sdb1 test_sdb1
+$ sudo chown -R $username:$username test_sdb1
+```
+Change $username to your username.
