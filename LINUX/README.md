@@ -32,7 +32,7 @@ $ sudo -i
 root@Username-empty:~# echo noop > /sys/block/sda/queue/scheduler
 root@Username-empty:~# cat /sys/block/sda/queue/scheduler
 [noop] deadline cfq 
-root@song-empty:~# exit
+root@Username-empty:~# exit
 ```
 
 noop is faster in SSD because SSD has IO scheduler in it (FTL).
