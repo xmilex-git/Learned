@@ -81,3 +81,4 @@ $ sudo mount /dev/sdb1 test_sdb1
 $ sudo chown -R $username:$username test_sdb1
 ```
 Change $username to your username.
+z
