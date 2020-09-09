@@ -65,6 +65,7 @@ $ sudo nvme -list
 ```
 
 smartctl : sudo apt-get install smartmontools
+
 nvme-cli : sudo apt-get install nvme-cli
 
 ## make file system on device
