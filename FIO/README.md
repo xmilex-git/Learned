@@ -123,6 +123,16 @@ $ sudo fio --time_based=1 --runtime=30
 $ sudo fio --name=fio_seq_write_test
 ```
 
+- fill_device
+```bash
+$ sudo fio --fill_device=1
+```
+
+fill device full with options
+
+
+
+
 - stdout
 ```bash
 $ sudo fio >> /home/song/results/fio_rndwr_470_fio_out.txt
