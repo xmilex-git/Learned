@@ -34,6 +34,19 @@ $ sudo fio --rw=randread
 ```
 you can choose IO type to test.
 
+- IO depth
+
+```bash
+$ sudo fio --iodepth=32
+# 1, 2, 4, 8, 16, 32, 64...
+```
+you can choose IO depth to test.
+
+IO depth is SSD's property. With using this option, you can use SSD's parallelism.
+
+It will make your SSD faster.
+
+
 
 
 - overwrites
