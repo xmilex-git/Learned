@@ -20,7 +20,11 @@ $ tar cvf - * | (cd /${destination_dir} ; tar xvf -)
   copy all files in current directory to destination directory very fast.
   
 ## privileges 
-
+```bash
+$ sudo chmod -R 777 *
+# or
+$ sudo chown -R username:username *
+```
   give all privileges to file 
 
 ## IO scheduler
