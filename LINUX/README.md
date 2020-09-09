@@ -20,8 +20,21 @@ $ tar cvf - * | (cd /${destination_dir} ; tar xvf -)
   copy all files in current directory to destination directory very fast.
   
 ## privileges 
-```bash
-$ sudo chmod -R 777 *
-$ sudo chown -R $Username:$Username *
-```
+
   give all privileges to file 
+
+## IO scheduler
+
+
+```bash
+$ sudo -i
+[sudo] password for Username: 
+root@Username-empty:~# echo noop > /sys/block/sda/queue/scheduler
+root@Username-empty:~# cat /sys/block/sda/queue/scheduler
+[noop] deadline cfq 
+root@song-empty:~# exit
+```
+
+noop is faster in SSD because SSD has IO scheduler in it (FTL).
+
+And it's more faster than OS's CFQ scheduler.
