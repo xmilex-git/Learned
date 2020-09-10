@@ -85,4 +85,16 @@ $ sudo mount /dev/sdb1 test_sdb1
 $ sudo chown -R $username:$username test_sdb1
 ```
 Change $username to your username.
-z
+
+## Btrace
+```bash
+$ sudo btrace /dev/sdb &>/${btraceoutputFILE} &
+..
+..
+$ sudo killall -15 btrace blktrace blkparser
+```
+
+Get device IO sequences.
+
+D means IO issued in device,
+C means IO completed.
