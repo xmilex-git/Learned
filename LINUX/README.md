@@ -98,3 +98,7 @@ Get device IO sequences.
 
 D means IO issued in device,
 C means IO completed.
+
+you can get btrace with this.
+
+sudo apt-get install blktrace
